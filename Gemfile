@@ -12,6 +12,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'spring'
+  gem "rspec-rails"
+  gem "factory_girl_rails"
 end
 
 group :development do
@@ -20,5 +23,12 @@ group :development do
   gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
+end
+
+group :test do
+  gem "capybara"
+  gem "database_cleaner"
+  gem "launchy"
+  gem "selenium-webdriver"
 end
 
